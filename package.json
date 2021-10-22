@@ -1,0 +1,45 @@
+{
+  "name": "@hudoro/next-neron-ui-admin",
+  "version": "0.1.0",
+  "private": true,
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
+  "files": [
+    "lib/esm/**/*",
+    "lib/cjs/**/*"
+  ],
+  "author": "Prawito Hudoro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hudoro-solusi-digital/next-neron-ui-admin"
+  },
+  "bugs": {
+    "url": "https://github.com/hudoro-solusi-digital/next-neron-ui-admin/issues"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "next-build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "peerDependencies": {
+    "@hudoro/neron": "^0.1.11",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.31",
+    "@types/styled-components": "^5.1.15",
+    "babel-plugin-styled-components": "^1.13.3",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "typescript": "4.4.4"
+  }
+}
